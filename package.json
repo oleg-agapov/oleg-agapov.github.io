@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "scripts": {
         "dev": "vite --host",
-        "build": "vite build",
+        "build": "vite build && cp docs/index.html docs/404.html",
         "serve": "vite preview"
     },
     "dependencies": {
