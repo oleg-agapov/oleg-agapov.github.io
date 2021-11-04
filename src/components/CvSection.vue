@@ -1,5 +1,5 @@
 <template>
-    <div class="prose prose-purple p-8 max-w-none">
+    <div class="prose prose-green p-8 max-w-none">
         <!-- Content -->
         <MarkdownDocument />
     </div>

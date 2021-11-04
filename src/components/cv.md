@@ -1,8 +1,20 @@
 ## Work experience
 
+### BI Engineer – [Palta](https://palta.com)
+
+#### 2021/11/01 – current
+
+Warsaw, Poland
+
+Taking care of BI part of data platform:
+
+- Looker as BI tools
+- Snowflake as database
+- ...
+
 ### Data Analyst – GOG.COM
 
-#### 2018/06/04 – current
+#### 2018/06/04 – 2021/10/31
 
 Warsaw, Poland
 

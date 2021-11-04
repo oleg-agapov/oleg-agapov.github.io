@@ -4,7 +4,7 @@
             <img
                 src="/src/assets/avatar.jpg"
                 alt="Oleg Agapov avatar"
-                class="w-48 h-48 rounded-full border-4 border-purple-500"
+                class="w-48 h-48 rounded-full border-4 border-green-500"
             />
         </div>
         <div class="flex-1 flex-grow">
@@ -14,12 +14,12 @@
                     <p class="ml-2 inline font-light">Agapov</p>
                 </div>
                 <p class="mt-4 sm:ml-1 text-gray-600">
-                    Data Analyst @
+                    BI Engineer @
                     <a
-                        href="https://gog.com"
+                        href="https://palta.com"
                         target="_blank"
-                        class="text-purple-700 underline"
-                        >GOG.com</a
+                        class="text-green-500 underline"
+                        >Palta</a
                     >
                     | Warsaw, Poland
                 </p>
@@ -45,7 +45,7 @@
                         <a
                             :href="item.to"
                             target="_blank"
-                            class="hover:text-purple-500"
+                            class="hover:text-green-500"
                         >
                             <img
                                 :src="item.file"
