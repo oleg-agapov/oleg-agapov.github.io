@@ -15,6 +15,9 @@
             >.
         </p>
         <p>
+            Мой telegram-канал "<a href="https://t.me/folder_favorites/" target="_blank">Папка избранное</a>".
+        </p>
+        <p>
             Helping Newprolab building <a href="https://newprolab.com/ru/bigdata/" target="_blank"
                 >Big Data Specialist</a> course.
         </p>
