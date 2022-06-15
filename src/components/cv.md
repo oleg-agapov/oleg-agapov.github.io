@@ -6,11 +6,18 @@
 
 Warsaw, Poland
 
-Taking care of BI part of data platform:
+Working on BI, data platform and analytics:
 
-- Looker as BI tools
-- Snowflake as database
-- ...
+- Creating and maintaining reports for the board of investors
+- Taking care of Looker: managing users, connections, documentation, projects, etc
+- Working on creating of data models for the variety of domains (finance, marketing, product, etc)
+- Consulting our startups about analytics (both tech and business parts)
+- Tech stach:
+    - Snowflake
+    - Looker
+    - dbt
+    - python
+    - docker
 
 ### Data Analyst – GOG.COM
 
