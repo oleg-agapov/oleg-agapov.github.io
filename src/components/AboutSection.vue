@@ -15,6 +15,11 @@
         </p>
         <hr>
         <p>
+            <img
+                src="/src/assets/dbt-spin.gif"
+                alt="dbt logo"
+                class="w-8 h-8 inline-block"
+            />
             My
             <a
                 href="https://payhip.com/b/JkAiy"
