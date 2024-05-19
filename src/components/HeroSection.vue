@@ -4,7 +4,7 @@
             <img
                 src="/src/assets/avatar.jpg"
                 alt="Oleg Agapov avatar"
-                class="w-48 h-48 rounded-full border-4 border-green-500"
+                class="w-48 h-48 rounded-full border-4 border-yellow-500"
             />
         </div>
         <div class="flex-1 flex-grow">
@@ -14,14 +14,14 @@
                     <p class="ml-2 inline font-light">Agapov</p>
                 </div>
                 <p class="mt-4 sm:ml-1 text-gray-600">
-                    BI Engineer @
+                    Analytics Engineer @
                     <a
-                        href="https://palta.com"
+                        href="https://hive.co"
                         target="_blank"
-                        class="text-green-500 underline"
-                        >Palta</a
+                        class="text-yellow-500 underline"
+                        >Hive.co</a
                     >
-                    | Warsaw, Poland
+                    | Vancouver, Canada
                 </p>
 
                 <!-- Social links -->
@@ -45,14 +45,14 @@
                         <a
                             :href="item.to"
                             target="_blank"
-                            class="hover:text-green-500"
+                            class="hover:text-yellow-500"
                         >
                             <img
                                 :src="item.file"
                                 :alt="item.name"
                                 class="inline w-8 h-8 mx-1 sm:ml-0 sm:mr-1"
                             />
-                            {{ item.to.substring(8) }}
+                            {{ item.username }}
                         </a>
                     </div>
                 </div>
