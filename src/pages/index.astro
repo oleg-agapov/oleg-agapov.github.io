@@ -1,0 +1,75 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio Mock</title>
+    <style is:global>@import "../styles/global.css";</style>
+  </head>
+  <body class="m-0 min-h-screen bg-gradient-to-b from-stone-50 via-amber-50 to-cyan-50 text-slate-900">
+    <div class="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-4 py-8 sm:px-8">
+      <header class="flex justify-center py-3">
+        <nav aria-label="Main" class="rounded-full border border-slate-200 bg-white/80 px-4 py-2 shadow-sm backdrop-blur">
+          <ul class="flex items-center gap-2 text-sm font-medium sm:gap-4 sm:text-base">
+            <li><a href="#about" class="rounded-full px-3 py-1 transition hover:bg-slate-100">About</a></li>
+            <li><a href="#cv" class="rounded-full px-3 py-1 transition hover:bg-slate-100">CV</a></li>
+            <li><a href="#courses" class="rounded-full px-3 py-1 transition hover:bg-slate-100">Courses</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="mt-8 flex flex-1 flex-col gap-10" x-data="{ prompt: '' }">
+        <section id="about" class="rounded-3xl border border-slate-200 bg-white/70 p-6 shadow-lg backdrop-blur sm:p-8">
+          <div class="grid items-center gap-6 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
+            <div class="mx-auto h-40 w-40 rounded-full border-4 border-white bg-gradient-to-br from-teal-200 via-cyan-200 to-sky-300 shadow-xl sm:h-48 sm:w-48">
+              <div class="flex h-full items-center justify-center rounded-full bg-white/30 text-2xl font-semibold text-slate-700">OA</div>
+            </div>
+            <div>
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-500">Hello there</p>
+              <h1 class="mt-3 text-3xl font-bold leading-tight sm:text-4xl">Senior analytics engineer at Hiive</h1>
+              <p class="mt-4 max-w-2xl text-slate-700">
+                I build analytics systems and decision-ready data products. This mock portfolio showcases a quick way to ask about my background, projects, and teaching.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="cv" class="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-lg sm:p-8">
+          <h2 class="text-2xl font-semibold">Ask anything about me</h2>
+          <p class="mt-2 text-slate-600">Use the prompt box to ask about experience, projects, and courses.</p>
+
+          <div class="mt-5 rounded-2xl border border-slate-200 bg-white p-3 shadow-inner">
+            <textarea
+              x-model="prompt"
+              rows="4"
+              placeholder="Ask about my career, analytics stack, or teaching approach..."
+              class="w-full resize-none rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none ring-teal-500 placeholder:text-slate-400 focus:ring-2"
+            ></textarea>
+            <div class="mt-3 flex items-center justify-between gap-3">
+              <p class="text-xs text-slate-500">Prompt preview:</p>
+              <button type="button" @click="prompt = ''" class="rounded-lg border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:bg-slate-100">Clear</button>
+            </div>
+            <p class="mt-2 rounded-lg bg-slate-100 px-3 py-2 text-sm text-slate-700" x-text="prompt || 'Your question will appear here.'"></p>
+          </div>
+
+          <div id="courses" class="mt-5 flex flex-wrap gap-2">
+            <button type="button" @click="prompt = 'What are your strongest analytics engineering skills?'" class="rounded-full border border-teal-200 bg-teal-50 px-4 py-2 text-sm text-teal-800 transition hover:bg-teal-100">
+              Strongest analytics engineering skills
+            </button>
+            <button type="button" @click="prompt = 'Can you summarize your CV in five bullet points?'" class="rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-sm text-cyan-800 transition hover:bg-cyan-100">
+              Summarize your CV in five bullet points
+            </button>
+            <button type="button" @click="prompt = 'What courses can you teach for data teams?'" class="rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm text-amber-800 transition hover:bg-amber-100">
+              Courses you can teach for data teams
+            </button>
+            <button type="button" @click="prompt = 'Tell me about a project where analytics changed a business decision.'" class="rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm text-indigo-800 transition hover:bg-indigo-100">
+              Project that changed a business decision
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

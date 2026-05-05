@@ -1,0 +1,17 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{frontmatter.title ?? "Markdown Page"}</title>
+    <style is:global>@import "../styles/global.css";</style>
+  </head>
+  <body class="m-0 bg-amber-50 px-6 py-10 text-stone-900">
+    <main class="mx-auto max-w-3xl leading-7">
+      <slot />
+    </main>
+  </body>
+</html>
