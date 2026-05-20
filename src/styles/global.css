@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Figtree:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-cream: #F7F2EA;
+  --color-cream-card: #EDE7DC;
+  --color-cream-editor: #E6DFCF;
+  --color-cream-border: #DDD5C6;
+  --color-terra: #D9542B;
+  --color-terra-soft: #F5D9C9;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Figtree', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}

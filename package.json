@@ -1,0 +1,25 @@
+{
+  "name": "olegagapov.com",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^6.0.0",
+    "@duckdb/duckdb-wasm": "^1.33.1-dev45.0",
+    "@mlc-ai/web-llm": "^0.2.83",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.0.0",
+    "astro": "^6.3.3",
+    "marked": "^18.0.3",
+    "tailwindcss": "^4.0.0",
+    "vue": "^3.5.0"
+  }
+}

@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="About — Oleg Agapov">
+  <div class="min-h-screen bg-cream font-body">
+
+    <!-- Main content -->
+    <main class="max-w-4xl mx-auto px-6 md:px-14 py-10 md:py-12 flex flex-col gap-10">
+
+      <!-- Greeting -->
+      <div class="flex items-center gap-5 md:gap-6">
+        <img src="/avatar-oleg.jpg" alt="Oleg Agapov" class="size-32 rounded-full object-cover object-[center_15%] shrink-0" />
+        <h1 class="font-display text-5xl leading-none tracking-tight text-gray-900">
+          Oleg <span class="text-terra">Agapov</span>
+        </h1>
+      </div>
+
+      <p class="text-base leading-relaxed text-gray-600">
+        I'm Oleg — an analytics engineer, teacher, and author based in Vancouver, Canada.
+      </p>
+
+      <!-- Sections -->
+      <section class="flex flex-col gap-4">
+        <h2 class="font-display text-2xl text-gray-900">What I do for <span class="text-terra">work</span></h2>
+        <div class="flex flex-col gap-3 text-base leading-relaxed text-gray-600">
+          <p>
+            I'm a Senior Analytics Engineer at <a href="https://www.hiive.com" target="_blank" class="underline underline-offset-2 hover:text-terra transition-colors">Hiive</a>, 
+            a fintech company that runs a private securities marketplace for pre-IPO shares. 
+            My job is turning messy transaction data into numbers people can actually trust. Most days that means writing dbt models, 
+            designing data pipelines, and having strong opinions about naming conventions.
+          </p>
+          <p>
+            Before that, I spent years working across the data stack — from raw ingestion to dashboards that executives pretend to read.
+          </p>
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-4">
+        <h2 class="font-display text-2xl text-gray-900">What I <span class="text-terra">teach</span></h2>
+        <div class="flex flex-col gap-3 text-base leading-relaxed text-gray-600">
+          <p>
+            Teaching is probably the thing I'm most proud of. I write about analytics engineering 
+            on <a href="https://www.linkedin.com/in/oleg-agapov/" target="_blank" class="underline underline-offset-2 hover:text-terra transition-colors">LinkedIn</a> 
+            to an audience of 14,000+ data professionals — covering dbt, SQL, data modeling, career advice, and the occasional unpopular opinion about the industry.
+          </p>
+          <p>
+            I wrote a book: <a href="https://olegagapov.gumroad.com/l/cracking-the-analytics-engineering-interview" target="_blank" class="underline underline-offset-2 hover:text-terra transition-colors">Cracking the Analytics Engineering Interview</a> 
+            — a practical guide that walks you from resume prep through technical rounds to stakeholder interviews. It's for people who want to get hired, not people who want to feel smart.
+          </p>
+          <p>More courses on data modeling and dbt are in the works.</p>
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-4">
+        <h2 class="font-display text-2xl text-gray-900">What I <span class="text-terra">believe</span></h2>
+        <div class="flex flex-col gap-3 text-base leading-relaxed text-gray-600">
+          <p>
+            The best analytics engineers are translators. They sit between messy data and clear decisions, and their job is to make sure nothing gets lost in translation.
+          </p>
+          <p>
+            I believe analytics engineering is a craft, not just a job title. 
+            Good data work is invisible — nobody notices when the numbers are right, but everyone notices when they're wrong. 
+            That asymmetry keeps me honest and a little paranoid, which is probably the right combination for someone who builds pipelines for a living.
+          </p>
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-4">
+        <h2 class="font-display text-2xl text-gray-900"><span class="text-terra">Outside</span> of work</h2>
+        <div class="flex flex-col gap-3 text-base leading-relaxed text-gray-600">
+          <p>
+            Vancouver is a great place for outdoor activities, like hiking ⛰️, cycling 🚴, spending time in parks 🌳 and beaches 🏖️.
+            I'm learning piano and drawing, both purely for the joy of being bad at something new.
+          </p>
+          <p>
+            If you're local or visiting Vancouver – feel free to reach out and connect!
+          </p>
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-4">
+        <h2 class="font-display text-2xl text-gray-900">Get in <span class="text-terra">touch</span></h2>
+        <div class="flex flex-col gap-3 text-base leading-relaxed text-gray-600">
+          <p >
+            The best way to reach me is via <a href="https://www.linkedin.com/in/oleg-agapov/" target="_blank" class="underline underline-offset-2 hover:text-terra transition-colors">LinkedIn</a>. I read everything, even if I'm slow to reply.
+          </p>
+          <p>Also, I have a small (but active) community of my students in Discord!</p>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+</Base>

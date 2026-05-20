@@ -1,0 +1,8 @@
+---
+import CourseLayout from '../../layouts/CourseLayout.astro';
+import SqlCourse from '../../components/SqlCourse.vue';
+---
+
+<CourseLayout title="SQL Fundamentals — Interactive Course">
+  <SqlCourse client:only="vue" />
+</CourseLayout>
