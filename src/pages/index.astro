@@ -1,34 +1,81 @@
 ---
 import Base from '../layouts/Base.astro';
-import Chat from '../components/Chat.vue';
 ---
 
 <Base title="Oleg Agapov">
   <div class="min-h-screen bg-cream font-body">
 
-    <!-- Main content -->
-    <main class="max-w-4xl mx-auto px-6 md:px-14 py-10 md:py-12 flex flex-col gap-8">
+    <main class="max-w-3xl mx-auto px-6 md:px-14 py-10 md:py-12 flex flex-col gap-10">
 
-      <!-- Row 1: portrait + heading -->
+      <!-- Hero: avatar + name -->
       <div class="flex items-center gap-5 md:gap-6">
-        <img src="/avatar-oleg.jpg" alt="Oleg Agapov" class="size-32 rounded-full object-cover object-[center_15%] shrink-0" />
+        <img src="/avatar-oleg.jpg" alt="Oleg Agapov" class="size-28 md:size-32 rounded-full object-cover object-[center_15%] shrink-0" />
         <div>
           <h1 class="font-display text-5xl leading-none tracking-tight text-gray-900">
             Hello — I'm <span class="text-terra">Oleg</span>
           </h1>
-          <p class="text-sm leading-relaxed text-gray-500 pl-1 mt-2">
-            Senior Analytics Engineer at <a href="https://www.hiive.com" target="_blank" class="underline underline-offset-2 hover:text-terra transition-colors">Hiive</a>.
-            <br>
-            I teach analytics, write on LinkedIn, and cook on weekends.
-            <br>
-            Check out my new book <a href="https://olegagapov.gumroad.com/l/cracking-the-analytics-engineering-interview" target="_blank" class="underline underline-offset-2 hover:text-terra transition-colors">"Cracking the Analytics Engineering Interview"</a>
-          </p>
+          <p class="mt-2 text-sm text-gray-500 pl-1">Analytics engineer, teacher, and author. Based in Vancouver, Canada.</p>
         </div>
-        
       </div>
 
-      <!-- Row 2: interactive chat -->
-      <Chat client:only="vue" />
+      <!-- Bio -->
+      <div class="flex flex-col gap-4 text-base leading-relaxed text-gray-600">
+        <p>
+          I'm a Senior Analytics Engineer at <a href="https://www.hiive.com" target="_blank" class="underline underline-offset-2 hover:text-terra transition-colors">Hiive</a> —
+          a Vancouver fintech running a private securities marketplace for pre-IPO shares.
+          My job is turning messy transaction data into numbers people can actually trust: dbt models, data pipelines, and strong opinions about naming conventions.
+        </p>
+        <p>
+          Outside of work, I teach. I write about analytics engineering on
+          <a href="https://www.linkedin.com/in/oleg-agapov/" target="_blank" class="underline underline-offset-2 hover:text-terra transition-colors">LinkedIn</a>
+          to 14,000+ data professionals — covering dbt, SQL, data modeling, and career advice.
+          I also wrote a book and build courses for people who want to get better at this craft, not just feel smart about it.
+        </p>
+      </div>
+
+      <!-- Highlight cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a
+          href="https://olegagapov.gumroad.com/l/cracking-the-analytics-engineering-interview"
+          target="_blank"
+          class="group rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm hover:border-terra transition-colors flex flex-col gap-2"
+        >
+          <p class="font-mono text-xs tracking-widest text-terra uppercase">Book</p>
+          <p class="text-gray-800 text-sm leading-snug font-medium">Cracking the Analytics Engineering Interview</p>
+          <p class="text-gray-500 text-xs leading-relaxed">Resume to offer letter — a practical guide for people who want to get hired.</p>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/oleg-agapov/"
+          target="_blank"
+          class="group rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm hover:border-terra transition-colors flex flex-col gap-2"
+        >
+          <p class="font-mono text-xs tracking-widest text-terra uppercase">Writing</p>
+          <p class="text-gray-800 text-sm leading-snug font-medium">LinkedIn — 14k+ followers</p>
+          <p class="text-gray-500 text-xs leading-relaxed">dbt, SQL, data modeling, career takes, and the occasional hot opinion.</p>
+        </a>
+
+        <a
+          href="/about"
+          class="group rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm hover:border-terra transition-colors flex flex-col gap-2"
+        >
+          <p class="font-mono text-xs tracking-widest text-terra uppercase">About</p>
+          <p class="text-gray-800 text-sm leading-snug font-medium">More about me</p>
+          <p class="text-gray-500 text-xs leading-relaxed">What I believe, what I cook, and how to reach me.</p>
+        </a>
+      </div>
+
+      <!-- Chat CTA -->
+      <a
+        href="/chat"
+        class="group rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm hover:border-terra transition-colors flex items-center justify-between gap-4"
+      >
+        <div>
+          <p class="font-mono text-xs tracking-widest text-terra uppercase mb-1">On-device AI</p>
+          <p class="text-gray-800 text-sm leading-relaxed">Have a question? Chat with an AI that knows about me — runs entirely in your browser, no data sent anywhere.</p>
+        </div>
+        <span class="text-gray-400 group-hover:text-terra transition-colors text-xl shrink-0">→</span>
+      </a>
 
     </main>
 

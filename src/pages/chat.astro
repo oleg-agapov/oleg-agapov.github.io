@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import Chat from '../components/Chat.vue';
+---
+
+<Base title="Chat with Oleg's AI">
+  <div class="min-h-screen bg-cream font-body">
+    <main class="max-w-3xl mx-auto px-6 md:px-14 py-10 md:py-12 flex flex-col gap-8">
+
+      <div>
+        <h1 class="font-display text-3xl tracking-tight text-gray-900">
+          Chat with <span class="text-terra">Oleg's AI</span>
+        </h1>
+        <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+          Runs entirely on your device — no server, no data sent anywhere. Powered by a small on-device LLM via WebGPU. First load downloads the model (~500 MB); subsequent visits are instant.
+        </p>
+      </div>
+
+      <Chat client:only="vue" />
+
+    </main>
+  </div>
+</Base>
