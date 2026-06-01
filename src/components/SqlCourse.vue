@@ -291,7 +291,7 @@ onMounted(async () => {
     </aside>
 
     <!-- Main -->
-    <main v-if="currentLesson" class="py-12 px-14 max-w-3xl max-md:py-8 max-md:px-5">
+    <main v-if="currentLesson" class="py-12 px-14 max-w-5xl max-md:py-8 max-md:px-5">
 
       <!-- Lesson header -->
       <div class="mb-9">
